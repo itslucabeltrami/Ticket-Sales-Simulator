@@ -1,6 +1,3 @@
-PAC_DESAROLLO_BeltramiLuca
-Lenguajes de marcas y sistemas de gestión de información
-
 El objetivo de este proyecto es el de crear una web que simule la compra de una entrada
 a un concierto, en particular el de Maneskin, y de una página de confirmación.
 
