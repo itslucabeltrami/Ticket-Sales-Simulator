@@ -1,0 +1,156 @@
+body {
+    background: white;
+    color: black;
+    font-family: Calibri, sans-serif;
+    font-weight: 300;
+}
+
+h1, h2 {
+    font-family: Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.main_picture_div {
+    display: block;
+    text-align: center;
+    margin-bottom: 1.6rem;
+
+}
+
+.main_picture {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.30);
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.657rem;
+    margin-bottom: 1.6rem;
+}
+
+.content-box-container {
+    width: 850px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    padding: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+}
+
+.small-content-box-container {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 5px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    gap: 1rem;
+}
+
+table  {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-spacing: 0;
+}
+
+th {
+    text-align: center;
+    font-weight: bold;
+    background-color: #ddd;
+    text-transform: uppercase;
+    padding: 10px;
+
+
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(odd) {
+    background: #EEEEEE;
+}
+
+
+fieldset {
+    border: 2.2px solid dodgerblue;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+legend {
+    color: dodgerblue;
+    font-weight: 550;
+    margin-left: 5px;
+}
+
+.content-box-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.concert_details_fieldset-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+}
+
+.concert_details_fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, select, .dropdown_category  {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: auto;
+}
+
+.button_submit {
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+    align-self: center;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.button_submit:hover {
+    background-color: darkblue;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-size: 14pt;
+    padding: 12px;
+    width: 52%;
+}
+
+.payment_radio {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.payment_image {
+    height: 40px;
+}
+
+.bold_tag {
+    font-weight: bold;
+}

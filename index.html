@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Compra de entradas Maneskin</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h1>MANESKIN</h1>
+    </div>
+    <div class="main_picture_div">
+        <img src="img/grupo.jpg" alt="Album Rush - Maneskin" class="main_picture"/>
+    </div>
+</header>
+
+<section class="section-content">
+    <div class="section-content">
+        <!--Descripción del Grupo-->
+        <div class="content-box-container">
+            <div>
+                <h2>Descripción del Grupo</h2>
+                <p>
+                    Måneskin es una banda de rock italiana formada en 2016 en Roma. Está compuesta por Damiano
+                    David,
+                    Victoria De Angelis, Thomas Raggi y Ethan Torchio. Alcanzaron la fama internacional tras ganar
+                    Eurovisión
+                    2021 con Zitti e buoni, destacando por su estilo enérgico y su fusión de rock clásico y moderno.
+                </p>
+            </div>
+        </div>
+
+        <!--Fechas de Conciertos-->
+        <div class="content-box-container">
+            <h2>Fechas de Conciertos</h2>
+            <table>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Lugar</th>
+                    <th>Hora</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td>2025-03-24</td>
+                    <td>Milan</td>
+                    <td>20:00</td>
+                    <td>40€</td>
+                </tr>
+                <tr>
+                    <td>2025-03-26</td>
+                    <td>Barcelona</td>
+                    <td>21:00</td>
+                    <td>50€</td>
+                </tr>
+                <tr>
+                    <td>2025-03-28</td>
+                    <td>Madrid</td>
+                    <td>21:00</td>
+                    <td>55€</td>
+                </tr>
+            </table>
+        </div>
+        <form id="dataForm">
+
+            <div class="content-box-container content-box-form">
+                <h2>Compra tus Entradas</h2>
+
+                <!--Datos Personales-->
+                <div class="personal_data_container">
+                    <fieldset class="concert_details_fieldset">
+                        <legend>Datos Personales</legend>
+                        <div class="concert_details_fieldset-input">
+                            <label for="name_input">Nombre Completo</label>
+                            <input type="text" id="name_input" name="name_input" placeholder="Nombre(s) Apellido(s)">
+                        </div>
+                    </fieldset>
+                </div>
+
+                <!--Detalles del Concierto-->
+                <div class="concert_details_container">
+                    <fieldset class="concert_details_fieldset">
+                        <legend>Detalles del Concierto</legend>
+
+                        <div class="concert_details_fieldset-input">
+                            <label for="date_input">Elige una fecha</label>
+                            <input type="date"
+                                   id="date_input"
+                                   value="2025-03-24"
+                                   min="2025-03-24"
+                                   max="2025-03-28"
+                                   step=2
+                                   name="date_input"
+                            />
+                        </div>
+
+                        <div class="concert_details_fieldset-input">
+                            <label for="dropdown_city">Elige el lugar</label>
+                            <select id="dropdown_city" class="dropdown_city">
+                                <option></option>
+                                <option value="1">Milan</option>
+                                <option value="2">Barcelona</option>
+                                <option value="3">Madrid</option>
+                            </select>
+                        </div>
+
+                        <div class="concert_details_fieldset-input">
+                            <label for="cantidad_entradas_input">Cantidad de entradas</label>
+                            <input type="number" value="1" max="10" min="1" id="cantidad_entradas_input"
+                                   name="cantidad_entradas_input"/>
+                        </div>
+
+                        <div class="concert_details_fieldset-input">
+                            <label for="dropdown_category">Categoría</label>
+                            <select id="dropdown_category" class="dropdown_category">
+                                <option></option>
+                                <option value="1">General</option>
+                                <option value="2">Personas con discapacidad</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <!--Metodo de Pago-->
+                <fieldset class="payment_fieldset">
+                    <legend>Método de Pago</legend>
+                    <div class="payment_radio">
+                        <input type="radio" id="Mastercard" name="payment" value="mastercard">
+                        <label for="Mastercard">
+                            <img src="img/master.png" alt="mastercard" class="payment_image"/>
+                        </label>
+                    </div>
+                    <div class="payment_radio">
+                        <input type="radio" id="Visa" name="payment" value="visa">
+                        <label for="Visa">
+                            <img src="img/visa.png" alt="visa" class="payment_image"/>
+                        </label>
+                    </div>
+                    <div class="payment_radio">
+                        <input type="radio" id="Bizum" name="payment" value="bizum">
+                        <label for="Bizum">
+                            <img src="img/bizum.jpg" alt="bizum" class="payment_image"/>
+                        </label>
+                    </div>
+                    <div class="payment_radio">
+                        <input type="radio" id="Paypal" name="payment" value="paypal">
+                        <label for="Paypal">
+                            <img src="img/paypal.png" alt="PayPal" class="payment_image"/>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <label>
+                        <input type="checkbox" required>
+                        Acepto los términos y condiciones</label>
+                </div>
+
+                <button id="button_submit" class="button_submit">Confirmar Compra</button>
+
+            </div>
+        </form>
+    </div>
+</section>
+</body>
+</html>
